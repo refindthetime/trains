@@ -5,15 +5,23 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Train Schedule</title>
+
     <meta name="description" content="">
+    
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
     <script src="https://www.gstatic.com/firebasejs/4.1.1/firebase.js"></script>
+    <!--jquery-->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!--moment.js-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.7.0/moment.js" charset="utf-8"></script>
+    <!--js mask-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -26,12 +34,12 @@
             <h1><img src="assets/images/logo.png"></h1>
             <h3>UTAH TRANSIT AUTHORITY</h3>
         </div>
-        <!-- end Main Header -->
+        <!--End-->
     </div>
 
-    <!-- Main Body Container -->
+    <!-- Main Body -->
     <div class="container">
-        <!-- Train Schedule Panel -->
+        <!-- Trax Train Schedule Panel -->
         <div class="panel panel-default" >
             <div class="panel-heading panel-custom" id="panel1" >
                 Current Train Schedule
@@ -47,10 +55,10 @@
                 <tbody id="table-data"></tbody>
             </table>
             <hr />
-            <!-- end Train Schedule Panel -->
+            <!-- End -->
         </div>
 
-        <!-- Display Trax Times as a Panel -->
+        <!-- Display Trax Adding New as a Panel -->
         <div class="panel panel-default" >
             <div class="panel-heading panel-custom" id="panel2">
                 Add Train
@@ -74,7 +82,7 @@
                         <input type="text" class="form-control" id="time-freq">
                     </div>
                     <div class="btn-group" role="group">
-                        <button type="button" id="btn-add" class="btn btn-primary"><span class="glyphicon glyphicon-circle-arrow-up"></span> Submit</button>
+                        <button type="button" id="btn-add" class="btn btn-primary">Submit</button>
                     </div>
                 </form>
             </div>

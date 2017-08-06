@@ -77,7 +77,7 @@ var storeInputs = function(event) {
     // prevent from from reseting
     event.preventDefault();
 
-    // get & store input values
+    // get/store inputs
     trainName = traxTrain.val().trim();
     trainDestination = traxTrainDestination.val().trim();
     trainTime = moment(traxTime.val().trim(), "HH:mm").subtract(1, "years").format("X");
@@ -115,7 +115,7 @@ $("#btn-add").on("click", function(event) {
     }
 });
 
-// Calls storeInputs function if enter key is clicked
+//same as above just for key press
 $('form').on("keypress", function(event) {
     if (event.which === 13) {
         // form validation - if empty - alert
